@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 250px;
+    padding: 30px 0;
+}
+.nav-links a {
+    text-decoration: none;
+    position: relative;
+    color: rgba(0, 0, 0, 1);
+}
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: rgba(0, 0, 0, 1);
+    transition: width 0.3s ease-in-out;
+}
+.nav-links a:hover::after{
+    width: 100%;
+}
+.nav-links a.active::after {
+    width: 100%;
+}
+.nav-links{
+    display: flex;
+    gap: 35px;
+}
+.navicons{
+    display: flex;
+    gap: 75px;
+}
+
+.hero-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('BlogPics/image\ 9.svg');
+    height: 784px;
+    gap: 30px;
+    padding-left: 70px;
+}
+.hero-sec h1,
+.hero-sec p{
+    color: rgba(255, 255, 255, 1);
+}
+.hero-sec h1{
+    font-size: 50px;
+}
+.hero-sec button{
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    width: 220px;
+    height: 65px;
+}
+
+.blog-sec{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+.blog-art{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.blog-text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 100px;
+    gap: 200px;
+    padding-bottom: 30px;
+}
+
+.foot h4{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.footlinks{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footlinks a{
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 30px;
+}
+.footer-last{
+    display: flex;
+    justify-content: center;
+    gap: 600px;
+    padding: 30px 0;
+}
+.last1{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}

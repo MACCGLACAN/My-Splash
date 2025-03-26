@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing:border-box ;
+}
+/* <!-- this is the header sec --> */
+header{
+    background-image: url(Rectangle\ 88.png);
+    height: 100vh;
+    background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    gap: 420px;
+}
+.move{
+    gap: 60px;
+    display: flex;
+}
+nav{
+    display: flex;
+    gap: 35px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    position:relative;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: white;
+    transition: width .2s;
+}
+nav a:hover::after{
+    width: 100%;
+}
+.find{
+    display: flex;
+    gap: 78px;
+}
+.menu{
+    display: none;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 115px;
+    padding-left: 50px;
+    height: 272px;
+    gap: 37px;
+}
+.main h1{
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 88px;
+    color: white;
+    text-align: center;
+    width: 694px;
+}
+.main button{
+    width: 241px;
+    height: 64px;
+    color: white;
+    font-size: 24px;
+    background-color: transparent;
+    border: 1.5px solid white;
+}
+/* <!-- this is the next section --> */
+.sec{
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.hero h1{
+    font-size: 48px;
+    font-weight: 500;
+}
+.claw{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.claur{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 608px;
+    padding-top: 5px;
+}
+.claur p{
+    font-size: 15px;
+    font-weight: 500
+}
+.claur h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.buy{
+    width: 187px;
+    height: 54px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+}
+.add{
+    width: 187px;
+    height: 54px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 400;
+    border: 1.5px solid rgb(0, 0, 0);
+}
+.btns{
+    display: flex;
+    padding-top: 8px;
+    gap: 25px;
+}
+.secs{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+/* lastest arrival */
+h2{
+    font-weight: 500;
+    padding-left: 50px;
+    font-size: 48px;
+    color: #000000;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.arrivals{
+    background-image: url(Rectangle\ 56.png);
+    height: 559px;
+    margin-top: 25px;
+}
+.arrivals h1{
+    font-weight: 400;
+    font-size: 56px;
+    color: #FFFFFF;
+    padding-top: 80px;
+    margin-left: 100px;
+}
+.arrivals p{
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-top: 30px;
+    margin-left: 100px;
+}
+.arrivals button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 206px;
+    height: 64px;
+    font-size: 24px;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.designs{
+    background-image: url(image\ 35.png);
+    height: 594px;
+    margin-top: 100px;
+}
+.designs h1{
+    font-weight: 400;
+    font-size: 56px;
+    color: #FFFFFF;
+    padding-top: 90px;
+    margin-left: 700px;
+}
+.designs p{
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-top: 30px;
+    margin-left: 700px;
+}
+.designs button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 206px;
+    height: 64px;
+    font-size: 24px;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-left: 700px;
+}
+.glammed{
+    background-image: url(Rectangle\ 87.png);
+    height: 594px;
+    margin-top: 100px;
+}
+.glammed h1{
+    font-weight: 400;
+    font-size: 56px;
+    color: #FFFFFF;
+    padding-top: 120px;
+    margin-left: 100px;
+}
+.glammed p{
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-top: 30px;
+    margin-left: 100px;
+}
+.glammed button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 206px;
+    height: 64px;
+    font-size: 24px;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+/* this is the footer */
+
+
+footer{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 100px;
+    gap: 200px;
+    padding-bottom: 30px;
+}
+footer h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.foot h4{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.footlinks{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 70px;
+    padding-bottom:50px ;
+}
+
+.footlinks a{
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 30px;
+}
+.lest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 600px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 70px;
+}
+.last{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* responsiveness */
+@media screen and (max-width:1028px) {
+    header{
+        background-position: center;
+        width: 100%;
+    }
+    .head{
+        gap: 250px;
+    }
+    .move{
+        gap: 30px;
+    }
+    .search{
+        width: 20px;
+    }
+    .cart{
+        width: 20px;  
+    }
+    .find{
+        gap: 38px;
+    }
+    .menu{
+        display: none;
+    }
+    .main{
+        gap: 30px;
+    }
+    .main h1{
+        font-size:50px ;
+        line-height: 70px;
+    }
+    .main button{
+        width: 200px;
+        font-size: 20px;
+    }
+    /* <!-- this is the next section --> */
+    .hero h1{
+        font-size:38px;
+    }
+    .sec,.secs{
+        margin-left:60px;
+    }
+    .rect{
+        width: 450px;
+    }
+    .claur{
+        width: 450px;
+    }
+    h2{
+        padding-left: 30px;
+    }
+    .arrivals{
+        background-position: center;
+    }
+    .arrivals h1{
+        font-size:50px ;
+        margin-left: 80px ;
+    }
+    .arrivals p{
+        margin-left: 80px ;
+    }
+    .arrivals button{
+        margin-left: 80px ;
+    }
+    .designs h1{
+        font-size:50px ;
+        margin-left: 500px;
+    }
+    .designs p{
+        margin-left: 500px;
+    }
+    .designs button{
+        margin-left: 500px;
+    }
+    .glammed h1{
+        font-size:50px ;
+        margin-left: 80px ;
+    }
+    .glammed p{
+        margin-left: 80px ;
+    }
+    .glammed button{
+        margin-left: 80px ;
+    }
+    .designs{
+        background-position: center;
+    }
+    footer{
+        gap: 150px;
+    }
+    .lest{
+        gap: 300px;
+    }
+}
+@media screen and (max-width:768px){
+    header{
+        background-position: center;
+        width: 100%;
+    }
+    .head{
+        gap: 140px;
+    }  
+    .search{
+        width: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .carts{
+        width: 20px;  
+    }
+    nav{
+        gap: 30px;
+    } 
+    nav a{
+        font-size: 16px;
+    }
+        /* <!-- this is the next section --> */
+    .hero h1{
+        font-size:34px;
+    }
+    .sec,.secs{
+        margin-left:50px;
+    }
+    .rect{
+        width: 330px;
+    }
+    .claur{
+        width: 330px;
+    }
+    .add,.buy{
+        width: 120px;
+        font-size: 16px;
+        height: 45px;
+    }
+    .designs h1{
+        font-size:50px ;
+        margin-left: 250px;
+    }
+    .designs p{
+        margin-left: 250px;
+    }
+    .designs button{
+        margin-left: 250px;
+    }
+    footer{
+        margin-left: 50px;
+        gap: 100px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    .spal{
+        width: 100px;
+    }
+    .lest{
+        gap: 200px;
+    }
+    
+}
+@media screen and (max-width:425px){
+    header{
+        background-position: center;
+        width: 170%;
+    }
+    .head{
+        gap: 400px;
+        align-items: center;
+    }
+    .move{
+        gap: 30px;
+    }
+    .search{
+        width: 20px;
+        display: none;
+    }
+    .carts{
+        width: 20px; 
+        display: none; 
+    }
+    .menu{
+        display: flex;
+        padding-bottom: 7px;
+    }
+    nav{
+        display: none;
+    }
+    .main h1{
+        font-size:40px ;
+        width: 400px;
+        line-height: 70px;
+    }
+    .hero h1{
+        margin-left: -240px;
+    }
+    .top{
+        flex-direction: column;
+    }
+    .rect{
+        width: 600px;
+    }
+    .claur{
+        width: 600px;
+    }
+    h2{
+        margin-left: 20px;
+    }
+    .arrivals{
+        background-position: center;
+        width: 170%;
+    }
+    .arrivals h1{
+        font-size:50px ;
+        margin-left: 80px ;
+    }
+    .arrivals p{
+        margin-left: 80px ;
+    }
+    .arrivals button{
+        margin-left: 80px ;
+    }
+    .designs{
+        width: 170%;
+    }
+    .designs h1{
+        font-size:50px ;
+        margin-left: 200px;
+    }
+    .designs p{
+        margin-left: 200px;
+    }
+    .designs button{
+        margin-left: 200px;
+    }
+    .glammed{
+        width: 170%;
+    }
+    .glammed h1{
+        font-size:50px ;
+        margin-left: 80px ;
+    }
+    .glammed p{
+        margin-left: 80px ;
+    }
+    .glammed button{
+        margin-left: 80px ;
+    }
+    .designs{
+        background-position: center;
+        width: 170%;
+    }
+    footer{
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 50px;
+    }
+    .footer{
+        gap: 100px;
+    }
+    .fram{
+        width: 300px;
+    }
+    hr{
+        margin-left: 50px;
+        width:600px
+    }
+    .lest{
+        gap: 100px;
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width:375px){
+    header{
+        background-position: center;
+        width: 175%;
+    }
+    .rect{
+        width: 550px;
+    }
+    .claur{
+        width: 550px;
+    }
+    h2{
+        margin-left: 20px;
+    }
+    .arrivals{
+        background-position: center;
+        width: 175%;
+    }
+    .glammed{
+        width: 175%;
+    }
+    .designs{
+        width: 175%;
+    }
+}
+
+@media screen and (max-width:320px){
+    header{
+        background-position: center;
+        width: 205%;
+    }
+    .arrivals{
+        background-position: center;
+        width: 205%;
+    }
+    .designs h1 ,.designs button ,.designs p{
+        margin-left: 70px;
+    }
+    .arrivals h1,.arrivals p,.arrivals button{
+        margin-left: 70px;
+    }
+    .glammed{
+        width: 205%;
+    }
+    .designs{
+        width: 205%;
+    }
+    .lest{
+        gap: 100px;
+        margin-left: 350px;
+    }
+}

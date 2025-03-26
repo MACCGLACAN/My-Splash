@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 250px;
+    padding-top: 50px;
+}
+.nav-links a {
+    text-decoration: none;
+    position: relative;
+    color: rgba(0, 0, 0, 1);
+}
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: rgba(0, 0, 0, 1);
+    transition: width 0.3s ease-in-out;
+}
+/* Underline on hover */
+.nav-links a:hover::after{
+    width: 100%;
+}
+/* Add this for the active page */
+.nav-links a.active::after {
+    width: 100%;
+}
+.nav-links{
+    display: flex;
+    gap: 35px;
+}
+
+.navicons{
+    display: flex;
+    gap: 75px;
+}
+
+.text h1{
+    font-weight: 500;
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px; 
+}
+
+.collections{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.pricetag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 420px;
+}
+
+.pricetag h3{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.pricetag p{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.button{
+    display: flex;
+    margin-top: 40px;
+    gap: 25px;
+}
+
+.button .button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 187px;
+    height: 54px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-color: transparent;
+}
+
+.button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.button .button2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 187px;
+    height: 54px;
+    background-color: white;
+    color: #000000;
+    border-color: #000000;
+}
+
+.pricetag2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 415px;
+}
+
+.pricetag2 h3{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.pricetag2 p{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+.pricetag3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 400px;
+}
+
+.pricetag3 h3{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.pricetag3 p{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+.pricetag4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 425px;
+}
+
+.pricetag4 h3{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.pricetag4 p{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+.pricetag5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 410px;
+}
+
+.pricetag5 h3{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.pricetag5 p{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+footer{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 100px;
+    gap: 200px;
+    padding-bottom: 30px;
+}
+
+.foot h4{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.footlinks{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footlinks a{
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 30px;
+}
+.footer-last{
+    display: flex;
+    justify-content: center;
+    gap: 600px;
+    padding: 30px 0;
+}
+.last1{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}

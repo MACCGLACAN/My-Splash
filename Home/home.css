@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+main{
+    background-image: url("HomePics/Rectangle\ 88.svg");
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 350px;
+    padding-top: 50px;
+}
+.nav-text{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.nav-links a {
+    text-decoration: none;
+    position: relative;
+    color: rgba(217, 217, 217, 1);
+}
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: rgba(217, 217, 217, 1);
+    transition: width 0.3s ease-in-out;
+}
+/* Underline on hover */
+.nav-links a:hover::after,
+.nav-links a:focus::after {
+    width: 100%;
+}
+/* Add this for the active page */
+.nav-links a.active::after {
+    width: 100%;
+}
+.nav-icons{
+    display: flex;
+    gap: 75px;
+}
+.hero-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 700px;
+    padding-left: 30px;
+    gap: 30px;
+}
+.hero-sec h1{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 88px;
+    width: 600px;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+.hero-sec button{
+    display: inline-block;
+    width: 241px;
+    height: 64px;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 48px;
+    color: #000000;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.pricetag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 320px;
+}
+.pricetag h3{
+    font-weight: 500;
+    font-size: 15px;
+}
+.pricetag p{
+    font-weight: 600;
+    font-size: 24px;
+}
+.section1{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+}
+.stars{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.button{
+    display: flex;
+    margin-top: 40px;
+    gap: 25px;
+}
+.button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 187px;
+    height: 54px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-color: transparent;
+}
+.button2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 187px;
+    height: 54px;
+    background-color: white;
+    color: #000000;
+    border-color: #000000;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 48px;
+    color: #000000;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.arrivals{
+    background-image: url(homepics/Rectangle\ 56.svg);
+    height: 559px;
+    margin-top: 25px;
+}
+.arrivals h1{
+    font-weight: 400;
+    font-size: 56px;
+    color: #FFFFFF;
+    padding-top: 80px;
+    margin-left: 100px;
+}
+.arrivals p{
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-top: 30px;
+    margin-left: 100px;
+}
+.arrivals button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 206px;
+    height: 64px;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.designs{
+    background-image: url(homepics/image\ 35.svg);
+    height: 594px;
+    margin-top: 100px;
+}
+.designs h1{
+    font-weight: 400;
+    font-size: 56px;
+    color: #FFFFFF;
+    padding-top: 90px;
+    margin-left: 700px;
+}
+.designs p{
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-top: 30px;
+    margin-left: 700px;
+}
+.designs button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 206px;
+    height: 64px;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-left: 700px;
+}
+.glammed{
+    background-image: url(homepics/Rectangle\ 87.svg);
+    height: 594px;
+    margin-top: 100px;
+}
+.glammed h1{
+    font-weight: 400;
+    font-size: 56px;
+    color: #FFFFFF;
+    padding-top: 120px;
+    margin-left: 100px;
+}
+.glammed p{
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-top: 30px;
+    margin-left: 100px;
+}
+.glammed button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 206px;
+    height: 64px;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+footer{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 100px;
+    gap: 200px;
+    padding-bottom: 30px;
+}
+
+.foot h4{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.footlinks{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footlinks a{
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 30px;
+}
+.footer-last{
+    display: flex;
+    justify-content: center;
+    gap: 600px;
+    padding: 30px 0;
+}
+.last1{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
