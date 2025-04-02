@@ -15,18 +15,36 @@
                     <img src="SPLASH.png" alt="">
                 </div>
                 <nav>
-                    <a href="splash.html">Home</a>
-                    <a href="">Shop</a>
-                    <a href="">Blog</a>
-                    <a href="">About</a>
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="about.html">About</a>
                     <a href="">Contact</a>
                 </nav>
             </div>
             <div class="find">
                 <img src="Vector (2).svg" alt="" class="search">
                 <img src="Vector (3).svg" alt="" class="carts">
-                <img src="icoc.svg" alt=""  class="menu">
+                <img src="icoc.svg" alt=""  class="menu" class="openbtn" onclick="openNav()">
             </div>
+            
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="">Contact</a>
+            </div>
+            <script>
+                function openNav() {
+                  document.getElementById("mySidepanel").style.width = "300px" ;
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidepanel").style.width = "0";
+                }
+            </script>
         </div>
         <div class="main">
             <h1>Make a statement with every outfit</h1>

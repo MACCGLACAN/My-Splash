@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing:border-box ;
+}
+/* <!-- this is the header sec --> */
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    gap: 420px;
+}
+.move{
+    gap: 60px;
+    display: flex;
+}
+nav{
+    display: flex;
+    padding-top: 3px;
+    gap: 35px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 20px;
+    position:relative;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 20px;
+    width: 0;
+    background: rgb(0, 0, 0);
+    transition: width .2s;
+}
+nav a:hover::after{
+    width: 100%;
+}
+.find{
+    display: flex;
+    gap: 78px;
+}
+.menu{
+    display: none;
+}

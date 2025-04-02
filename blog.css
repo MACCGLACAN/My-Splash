@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing:border-box ;
+}
+/* <!-- this is the header sec --> */
+main{
+    background-image: url(image\ 9.png);
+    height: 120vh;
+    background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    padding-bottom: 20px;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    gap: 420px;
+    padding-top: 30px;
+}
+.move{
+    gap: 60px;
+    display: flex;
+}
+nav{
+    display: flex;
+    padding-top: 3px;
+    gap: 35px;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 20px;
+    position:relative;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 20px;
+    width: 0;
+    background: rgb(0, 0, 0);
+    transition: width .2s;
+}
+nav a:hover::after{
+    width: 100%;
+}
+.find{
+    display: flex;
+    gap: 78px;
+}
+.menu{
+    display: none;
+}
+
+/* this is the main */
+main{
+    background-image: url(image\ 9.png);
+    /* height: 100vh; */
+    background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.personal{
+    display: flex;
+    flex-direction: column;
+    width: 722px;
+    height: 390px;
+    margin-left: 90px;
+    padding-top: 100px;
+    gap: 30px;
+}
+.personal h1{
+    font-weight: 400;
+    font-size: 56px;
+}
+.personal p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.personal button{
+    width: 219px;
+    height: 64px;
+    font-size: 20px;
+    font-weight: 400;
+    color:white;
+    background-color: transparent;
+    border: white 2px solid;
+}
+/* secsec */
+.trend{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%;
+    padding-top: 100px;
+    margin-left: 90px;
+    padding-bottom: 50px;
+}
+section{
+    display: flex;
+    gap: 30px;
+    margin-left: 90px;
+}
+.jackimg{
+    padding-bottom: 10px;
+}
+.july{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.july p{
+    width: 396px;
+}
+.july h2{
+    font-size: 24px;
+    font-weight: 500;
+}
+.july a{
+    color: black;
+    font-weight: 600;
+}
+
+/* this is the footer */
+
+
+footer{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 100px;
+    gap: 200px;
+    padding-bottom: 30px;
+}
+footer h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.foot h4{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.footlinks{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 70px;
+    padding-bottom:50px ;
+}
+
+.footlinks a{
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 30px;
+}
+.lest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 600px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 70px;
+}
+.last{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* responsiveness */
+@media screen and (max-width:1028px) {
+    header{
+        background-position: center;
+        width: 100%;
+    }
+    .head{
+        gap: 250px;
+    }
+    .move{
+        gap: 30px;
+    }
+    .search{
+        width: 20px;
+    }
+    .cart{
+        width: 20px;  
+    }
+    .find{
+        gap: 38px;
+    }
+    .menu{
+        display: none;
+    }
+    /* <!-- this is the next section --> */
+    ::selection
+    .jackimg img{
+        width: 300px;
+    }
+    .july p{
+        width: 300px;
+        font-size: 13px;
+    }
+    .july h2{
+        font-size: 20px;
+    }
+    footer{
+        gap: 150px;
+    }
+    .lest{
+        gap: 300px;
+    }
+}
+@media screen and (max-width:768px){
+    header{
+        background-position: center;
+        width: 100%;
+    }
+    .head{
+        gap: 140px;
+    }  
+    .search{
+        width: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .carts{
+        width: 20px;  
+    }
+    nav{
+        gap: 30px;
+    } 
+    nav a{
+        font-size: 16px;
+    }
+        /* <!-- this is the next section --> */
+    .hero h1{
+        font-size:34px;
+    }
+    .sec,.secs{
+        margin-left:50px;
+    }
+    .rect{
+        width: 330px;
+    }
+    .claur{
+        width: 330px;
+    }
+    .add,.buy{
+        width: 120px;
+        font-size: 16px;
+        height: 45px;
+    }
+    footer{
+        margin-left: 50px;
+        gap: 100px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    .spal{
+        width: 100px;
+    }
+    .lest{
+        gap: 200px;
+    }
+    
+}
+@media screen and (max-width:425px){
+    header{
+        /* background-position: center; */
+        width: 170%;
+    }
+    .head{
+        gap: 400px;
+        align-items: center;
+    }
+    .move{
+        gap: 30px;
+    }
+    .search{
+        width: 20px;
+        display: none;
+    }
+    .carts{
+        width: 20px; 
+        display: none; 
+    }
+    .blasp{
+        width: 150px;
+    }
+    .menu{
+        display: flex;
+        padding-bottom: 7px;
+    }
+    nav{
+        display: none;
+    }
+    section{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 50px;
+    }
+    .footer{
+        gap: 100px;
+    }
+    .fram{
+        width: 300px;
+    }
+    hr{
+        margin-left: 50px;
+        width:600px
+    }
+    .lest{
+        gap: 100px;
+        margin-left: 250px;
+    }
+}
+@media screen and (max-width:375px){
+    header{
+        background-position: center;
+        width: 175%;
+    }
+    .rect{
+        width: 550px;
+    }
+    .claur{
+        width: 550px;
+    }
+}
