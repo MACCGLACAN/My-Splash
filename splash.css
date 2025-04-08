@@ -515,7 +515,7 @@ footer h3{
 @media screen and (max-width:425px){
     header{
         background-position: center;
-        width: 170%;
+        width: 180%;
     }
     .head{
         gap: 400px;
